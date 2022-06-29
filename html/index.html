@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML</title>
+</head>
+
+<body>
+    <!--Headings, Encabezados o Títulos-->
+    <h1>Título h1</h1>
+    <h2>Título h2</h2>
+    <h3>Título h3</h3>
+    <h4>Título h4</h4>
+    <h5>Título h5</h5>
+    <h6>Título h6</h6>
+    <!--Salto de linea-->
+    <br>
+    <!--Linea Horizontal-->
+    <hr>
+    <!--Párrafos-->
+    <p>
+        Esto es un texto dentro de un párrafo
+        <br>
+        <b>Negrita o Bold</b>
+        <br>
+        <i>Cursiva o Italic</i>
+        <br>
+        <u>Subrayado o UnderLine</u>
+    </p>
+    <p>
+        <b>
+            <i>
+                <u> 
+                    Héctor Gómez
+                </u>
+            </i>
+        </b>
+    </p>
+    <br>
+    <hr>
+    <!--Imágenes-->
+    <img src="img/scyther.gif" width="100" alt="imagen 1">
+    <!--Al añadir sólo un height o width, se mantendrá la proporción-->
+    <img src="img/53j.png" alt="imagen 2" height="150">
+    <img src="img/frontvsback.jpg" alt="imagen 3" height="300">
+
+
+    <!--Link o hipervinculos a otras páginas-->
+    <br>
+    <a href="https://www.generation.org/">Visitar Generation</a>
+    <br>
+    <!--Target blank sirve para abrir el vinculo en otra pestaña-->
+    <a href="https://www.lun.com/" target="_blank">Visitar Lun.com</a>
+    <br>
+    <!--Url valor relativo, mueve dentro de la misma web-->
+    <a href="pagina2.html">Ir a la pagina 2</a>
+    <br>
+    <!--url valor anclaje, movernos dentro de la misma página-->
+    <a href="#">Ir a seccion de la página</a>
+    <br>
+    <hr>
+    <!--Listas: Ordenadas y las No Ordenadas-->
+    <ol>
+        <li>Grupo 1</li>
+        <li>Grupo 2</li>
+        <li>Grupo 3</li>
+        <li>Grupo 4</li>
+        <li>Grupo 5</li>
+        <li>Grupo 6</li>
+        <li>Grupo 7
+            <ol>
+                <li>Grupo 7.1</li>
+                <li>Grupo 7.2</li>
+            </ol>
+        </li>
+
+    </ol>
+    <br>
+    <ul>
+        <li>Grupo 1</li>
+        <li>Grupo 2</li>
+        <li>Grupo 3</li>
+        <li>Grupo 4</li>
+        <li>Grupo 5</li>
+        <li>Grupo 6</li>
+        <li>Grupo 7
+            <ul>
+                <li>Grupo 7.1</li>
+                <li>Grupo 7.2
+                    <ul>
+                        <li>
+                            <a href="menu">Menu</a>
+                        </li>
+                        <li>
+                            Grupo 7.2.1
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <!-- TABLAS
+    <ul>
+        <c:forEach items="${lista}" var="item">
+            <li>${item}</li>
+        </c:forEach>
+    </ul>-->
+    <table>
+        <thead>
+            <tr>
+                <th>Edad</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>29</td>
+                <td>Héctor</td>
+                <td>Gómez</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Nicole</td>
+                <td>Pezoa</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+
+</body>
+
+</html>
