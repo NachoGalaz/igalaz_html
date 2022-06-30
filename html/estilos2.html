@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de estilo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            /*Por lo general se aplica a imagenes width y height*/
+            width: 200px;
+            /*ancho*/
+            height: 50px;
+            /*alto*/
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1em;
+            line-height: 1.5;
+            /*separaicon entre lineas de texto*/
+            font-weight: 900;
+            /* de 100 a 900 grosor letra*/
+        }
+        
+        div {
+            width: 400px;
+            /*ancho*/
+            height: 400px;
+            /*alto*/
+            background: url("assets/img/cristiano.png") no-repeat center;
+            /*sin el no repeat se repetira la imagen hasta lleanr el fondo
+            center para dejarlo al centro*/
+            background-color: cadetblue;
+            /*color del fondo del div en este caso*/
+            background-size: 85%;
+            /*tamanio fondo (imagen)*/
+            border: 10px solid #ccc;
+            /*color todo el borde y tamanio en px*/
+            border-top-color: aqua;
+            /*color borde de arriba*/
+            border-radius: 20px;
+            /* bordes redondos*/
+            border-bottom-color: blueviolet;
+            /*lo que hace es agregar el scroll
+            cuando queda muy pequenio, barra de desplazamiento*/
+            overflow: hidden;
+            text-align: center;
+        }
+        /*hexadecimal 16: 0123456789ABCDEF*/
+        /*12 34 56 ROJO VERDE AZUL RGB()*/
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        /*posicion: static, relative, fixed, absolute, st..*/
+        
+        .estatico {
+            /*por class*/
+            width: 500px;
+            height: 40px;
+            position: static;
+        }
+        
+        .relativo {
+            /*por class*/
+            width: 500px;
+            height: 40px;
+            left: 50px;
+            /*top rigth bottom left*/
+            position: relative;
+        }
+        
+        .fijo {
+            /*por class*/
+            width: 500px;
+            height: 40px;
+            right: 50px;
+            top: 0px;
+            /*top rigth bottom left*/
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>SIUUUU</h1>
+        <a href="#">link de prueba</a>
+        <p>Parrafo 1</p>
+    </div>
+    <div class="estatico">
+        <p> este es un texto con posicionamiento static</p>
+        <!--Queda fijo en donde lo pusimos, pero no se ve constantemente como el fixed-->
+    </div>
+    <div class="relativo">
+        <p> este es un texto con posicionamiento relative</p>
+        <!--Va ser relativo pq depende del posicionamiento que le demos-->
+    </div>
+    <div class="fijo">
+        <p> este es un texto con posicionamiento fixed</p>
+        <!--Queda fijo en el lugar donde lo dejemos aunque se haga scroll o lo que sea-->
+    </div>
+</body>
+
+</html>

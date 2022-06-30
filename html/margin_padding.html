@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin padding</title>
+    <style>
+        #padre {
+            width: 398px;
+            height: 398px;
+            background-color: aquamarine;
+            /*margin: 10px 20px 30px 40px;*/
+            margin-top: 15px;
+            border: 1px solid aquamarine
+            /*se hace generalmente asi para que no se note, mismo color al borde que al background*/
+        }
+        
+        #hijo {
+            width: 40px;
+            height: 40px;
+            background-color: violet;
+            margin: 10px;
+        }
+        /*margin:10px;(tambien tiene top buttom right y left) como efecto optico provoca desplazamiento
+        pero el elemento en realidad esta creciendo
+        ** cuando agregamos dos valores tipo: margin:10px 20px
+        agrega 10 arriba y abajo 20 izquierda y derecha
+        ** cuando se agregan 3 valores margin: 10px 20px 30px;
+        arriba, izquierda derecha y abajo
+        ** con cuatro valores el orden seria arriba derecha abajo izquierdas
+        se puede dar tambien un valor para que sea abajo y arriba y un auto para que se ajuste automaticamente
+        ** ejemplo= margin: 10px auto;*/
+    </style>
+</head>
+
+<body>
+    <div id="padre">
+        <div id="hijo">
+
+        </div>
+    </div>
+</body>
+
+</html>

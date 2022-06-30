@@ -7,17 +7,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
     <style>
-
+        /* 3 formas basicas de asignar un estilo */
+        /* ---- 1.- POR ELEMENTO HTML -------- 
+        Nos referimos a todos los elementos tipo body div 
+        En el caso de abajo le aplicamos el estilo a todo el div*/
+        
+        div {
+            background-color: cadetblue;
+            width: 50%;
+            /*Le asignamos un tamano al div, como la imagen esta en % tambien se ajusta*/
+        }
+        
+        p {
+            background-color: chartreuse;
+            color: cornsilk;
+        }
+        /*Aca afeta toda la etiqueta parrafo (p)*/
+        
+        img {
+            width: 400px;
+            /*cuando se trabaja con % la referencia es la pagina o el contenedor */
+        }
+        /*Porcentajes se usa para trabajar con responsividad*/
+        /*EM= 16px Y REM unidades de medidas que trabajan disenadores*/
+        /*--------------------------------------------*/
+        /* ----- 2.- CLASES -----
+        Se ven afectadas solo aquellas etiquetas QUE TENGAN LA CLASE
+        CUALQUIER ETIQUETA, por ej, si DIV y Parrafo tienen la misma etiqueta
+        AMBOS SE VEN AFECTADOS
+        - PESA MAS el que este mas cerca al elemento mismo mas pesa
+        En este caso parrafo 5 quedara con el color verde ya que la clase parrafo lo 
+        tiene el div y el backgroundcolor lo tiene directamente por elemento en <p>*/
+        
+        .parrafos {
+            color: magenta;
+            background-color: paleturquoise;
+        }
+        
+        .generation1 {
+            color: blue;
+        }
+        /*CUANDO QUEREMOS TRABAJAR por clase se hace con .NOMBRECLASECREADA
+        en ete caso parrafos lo creamos en parrafo2y3 class="parrafos"*/
+        /*--------------------------------------------------*/
+        /* 3.- POR ID, estilo especifico para la etiqueta*/
+        /*El ID es unico, si quiere trabajar con el mismo mejor
+        hacer una clase. Se trabaja con #*/
+        
+        #importante {
+            color: crimson;
+        }
+        
+        #pg1 {
+            color: darkorange;
+        }
+        /*Por etiqueta -> Muy genérico
+----------Por clase    -> Genérico reducido
+----------Por id       -> Específico
+----------!important   -> Prioritario
+*/
     </style>
 </head>
 
 <body>
     <div>
         <p>Parrafo 1</p>
-        <p>Parrafo 2</p>
-        <p>Parrafo 3</p>
-        <p>Parrafo 4</p>
+        <p class="parrafos">Parrafo 2</p>
+        <!--CLASS SE TRABAJA DENTRO DE LA ETIQUETA DE APERTURA-->
+        <img src="assets/img/editorhtml.jpg" alt="front">
+        <p class="parrafos">Parrafo 3</p>
+        <p id="importante">Parrafo 4</p>
+        <img src="assets/img/html.png" alt="front">
     </div>
+    <div class="parrafos">
+        <p>Parrafo 5</p>
+        <!--En este caso parrafo 5 heredara de div la clase parrafos por lo que 
+        tendra el color de lo agregado en el .parrafos{}-->
+    </div>
+    <p id="pg1" class="generation1">Parrafo 6</p>
+    <!--Finalmente el id es el mas importante, es el mas cercano al elemento
+    ya que ninguno deberia llamarse igual-->
 
 </body>
 
