@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Formulario de envio</h1>
+    <!--action-> ruta o url-->
+    <form action="" method="post">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="pass">Passsword</label>
+        <input type="password" id="pass" name="pass" required>
+        <br>
+        <label for="fecha">Cumpleanos</label>
+        <input type="date" id="fecha" name="fecha" min="200-01-01" max="2100-01-01">
+        <br>
+        <label for="fecha2">DateTimeLocal</label>
+        <input type="datetime-local" id="fecha2" name="fecha2">
+
+        <br>
+        <!--Elemento oculto visualmente-->
+        <input type="hidden" id="id" name="id" value="77">
+        <br>
+        <!--Area de texto-->
+        <textarea id="textarea" name="textarea" cols="50" rows="10" maxlength="50"></textarea>
+        <!--cols y rows tamano del area y maxlength amximo de caracteres-->
+        <br>
+        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
+        <input type="reset" value="Reset">
+
+
+
+    </form>
+</body>
+
+</html>
