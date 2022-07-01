@@ -21,7 +21,7 @@
             width: 40px;
             height: 40px;
             background-color: violet;
-            margin: 10px;
+            display: inline-block;
         }
         /*margin:10px;(tambien tiene top buttom right y left) como efecto optico provoca desplazamiento
         pero el elemento en realidad esta creciendo
@@ -32,15 +32,42 @@
         ** con cuatro valores el orden seria arriba derecha abajo izquierdas
         se puede dar tambien un valor para que sea abajo y arriba y un auto para que se ajuste automaticamente
         ** ejemplo= margin: 10px auto;*/
+        
+        #hijo2 {
+            width: 40px;
+            height: 40px;
+            background-color: salmon;
+            display: inline-block;
+        }
+        /*Elementos inline <a><img><input><label><select><textarea>*/
+        /*Elementos block <body><div><form><h1>-<h6><p><table><ul><ol><li>*/
+        
+        a {
+            display: block;
+        }
     </style>
 </head>
 
 <body>
     <div id="padre">
-        <div id="hijo">
-
-        </div>
+        <div id="hijo"></div>
+        <div id="hijo2"></div>
     </div>
+    <!-- nunca -->
+    <a href="index.php">
+        <h1></h1>
+    </a>
+
+    <!--Block-->
+    <a href="#grupo1">grupo 1</a>
+    <a href="#grupo2">grupo 2</a>
+    <a href="#grupo3">grupo 3</a>
+    <a href="#grupo4">grupo 4</a>
+    <a href="#grupo5">grupo 5</a>
+    <a href="#grupo6">grupo 6</a>
+
+    <p> sadgfopisdo[gpfi sdpofg';lsdkgf </p>
+    <p>pasidjgfalksdfjalsk asdfasdf asdfasdf</p>
 </body>
 
 </html>
